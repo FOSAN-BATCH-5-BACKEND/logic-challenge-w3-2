@@ -6,7 +6,7 @@ Isikanlah function dataKaryawan yang akan mengembalikan data tersebut menjadi se
 Level Pertama untuk nama Perusahaan
 Level Kedua untuk nama Divisi
 Level Ketiga untuk data Karyawan seperti nama, umur dan status
-Untuk status apabila true maka "menikah" apabila false berarti "single"
+Untuk status apabila "true" maka "menikah" apabila "false" berarti "single"
 
 contoh:
 Input: [
