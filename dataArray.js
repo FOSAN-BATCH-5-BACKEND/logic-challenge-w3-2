@@ -37,9 +37,10 @@ Output: "Divisi: duskiTeam
 */
 
 function dataKaryawan(parameterData) {
-    // buatlah kodemu disini
+  // buatlah kodemu disini
+  for (let i = 0; i < parameterData.length; i++) {
+  }
 }
-
 let data = [
   "duskiTeam", ["bhagas", 20, true], ["adhit", 19, false], ["puka", 23, false],
   "fosanAcademy", ["rian", 21, false], ["rama", 23, true], ["rijal", 22, false],
