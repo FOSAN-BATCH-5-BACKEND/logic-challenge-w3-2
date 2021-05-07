@@ -37,7 +37,9 @@ Output: "Divisi: duskiTeam
 */
 
 function dataKaryawan(parameterData) {
-    // buatlah kodemu disini
+    for(let i = 0; i < parameterData.length; i++){
+      console.log(parameterData[i])
+    }
 }
 
 let data = [

@@ -11,7 +11,16 @@ jika serigala tersebut berada di depan anda, (di depan domba no 1) maka anda bis
 */
 
 function serigalaBerbuluDomba(queue) {
-    
+    let number = queue.length
+    let penampung = 0
+    for(let i = 0; i<queue.length; i++){
+        // console.log(queue[i])
+        if(queue[i] == 'serigala'){
+            penampung += i
+        }
+        hasil = queue.length - penampung -1
+    }
+    return hasil
 }
 
 
@@ -26,4 +35,4 @@ console.log(serigalaBerbuluDomba(["serigala", "domba", "domba", "domba", "domba"
 console.log(serigalaBerbuluDomba(["domba", "serigala", "domba"]))
 // "oi, domba no 1, LARIIII")
 console.log(serigalaBerbuluDomba(["domba", "domba", "serigala"]))
-// "syuh syuh"
+"syuh syuh"
