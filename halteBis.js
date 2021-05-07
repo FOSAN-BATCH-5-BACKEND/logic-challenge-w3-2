@@ -1,25 +1,9 @@
-/* Anda adalah seorang sopir bus. Anda menurunkan dan menerima penumpang pada setiap halte.
-Di asumsikan dalam sebuah array, berisi beberapa halte, dan pada setiap halte berisi 2 angka, angka yang pertama adalah jumlah penumpang masuk,
- angka kedua adalah jumlah penumpang yang turun. buatlah sebuah fungsi untuk menghitung sisa penumpang yang ada di dalam bus.
+/* Anda adalah seorang sopir bus. Anda menurunkan dan menerima penumpang pada setiap halte.Di asumsikan dalam sebuah array, berisi beberapa halte, dan pada setiap halte berisi 2 angka, angka yang pertama adalah jumlah penumpang masuk, angka kedua adalah jumlah penumpang yang turun. buatlah sebuah fungsi untuk menghitung sisa penumpang yang ada di dalam bus.
 */
 
 let jumlah = function(halte){
-    let masuk = 0;
-    let  keluar = 0;
-    for (let i = 0; i < halte.length; i++) {
-      // console.log(halte[i]);
-      // for (let j = 0; j < halte[i].length; j++) {
-      //   // console.log(halte[i][1]);
-      // }
-      if(halte[i][0]){
-        masuk += halte[i][0]
-      }if(halte[i][1]){
-        keluar += halte[i][1]
-      }
-      
-    }hasil = masuk - keluar
-     return hasil;
-    }
+    // Good Luck!
+  }
 
 
 

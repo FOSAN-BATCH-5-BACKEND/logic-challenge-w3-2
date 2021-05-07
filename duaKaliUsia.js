@@ -3,8 +3,8 @@
 */
 
 function duaKaliUsia(ayah, anak) {
-  hasil = (anak*2)-ayah;
-  return hasil;    
+    // your code here
+
   }
 
 
