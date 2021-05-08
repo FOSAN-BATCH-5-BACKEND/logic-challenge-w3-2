@@ -22,7 +22,7 @@ function serigalaBerbuluDomba(queue) {
         return 'syuh syuh'
     }
     else{
-    return 'oi, domba no ' + nomer +', LARIIII'
+    return 'oi, domba no ' + hasil +', LARIIII'
     }
 }
 
