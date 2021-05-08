@@ -11,19 +11,59 @@ jika serigala tersebut berada di depan anda, (di depan domba no 1) maka anda bis
 */
 
 function serigalaBerbuluDomba(queue) {
-    
+  //   console.log(queue);
+  let posisiSerigala = 0;
+  for (let i = 0; i < queue.length; i++) {
+    if (queue[i] == "serigala") {
+      posisiSerigala = i;
+    }
+  }
+  let dombaTerakhir = queue.length - 1;
+  let posisiDomba = dombaTerakhir - posisiSerigala;
+  if (posisiDomba == 0) {
+    return `"syuh syuh"`;
+  } else {
+    return `"oi, domba no ${posisiDomba}, LARIIII"`;
+  }
 }
 
-
-
-
-
-console.log(serigalaBerbuluDomba(["domba", "domba", "domba", "domba", "domba", "serigala", "domba", "domba"]))//"oi, domba no 2, LARIIII"
-console.log(serigalaBerbuluDomba(["domba", "serigala", "domba", "domba", "domba", "domba", "domba"]))
+console.log(
+  serigalaBerbuluDomba([
+    "domba",
+    "domba",
+    "domba",
+    "domba",
+    "domba",
+    "serigala",
+    "domba",
+    "domba",
+  ])
+); //"oi, domba no 2, LARIIII"
+console.log(
+  serigalaBerbuluDomba([
+    "domba",
+    "serigala",
+    "domba",
+    "domba",
+    "domba",
+    "domba",
+    "domba",
+  ])
+);
 //"oi, domba no 5, LARIIII"
-console.log(serigalaBerbuluDomba(["serigala", "domba", "domba", "domba", "domba", "domba", "domba"])); 
+console.log(
+  serigalaBerbuluDomba([
+    "serigala",
+    "domba",
+    "domba",
+    "domba",
+    "domba",
+    "domba",
+    "domba",
+  ])
+);
 // "oi, domba no 6, LARIIII"
-console.log(serigalaBerbuluDomba(["domba", "serigala", "domba"]))
+console.log(serigalaBerbuluDomba(["domba", "serigala", "domba"]));
 // "oi, domba no 1, LARIIII")
-console.log(serigalaBerbuluDomba(["domba", "domba", "serigala"]))
+console.log(serigalaBerbuluDomba(["domba", "domba", "serigala"]));
 // "syuh syuh"

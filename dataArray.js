@@ -37,12 +37,40 @@ Output: "Divisi: duskiTeam
 */
 
 function dataKaryawan(parameterData) {
-    // buatlah kodemu disini
+  // buatlah kodemu disini
+  console.log(`Divisi : ${parameterData[0]}`);
+  for (let i = 1; i <= 3; i++) {
+    console.log(`Nama   : ${parameterData[i][0]}`);
+    console.log(`Umur   : ${parameterData[i][1]}`);
+    console.log(
+      `Status : ${parameterData[i][2] == true ? "Menikah" : "Single"}`
+    );
+  }
+  console.log(`\n`);
+  console.log(`Divisi : ${parameterData[4]}`);
+  for (let i = 5; i <= 7; i++) {
+    console.log(`Nama   : ${parameterData[i][0]}`);
+    console.log(`Umur   : ${parameterData[i][1]}`);
+    console.log(
+      `Status : ${parameterData[i][2] == true ? "Menikah" : "Single"}`
+    );
+  }
 }
 
 let data = [
-  "duskiTeam", ["bhagas", 20, true], ["adhit", 19, false], ["puka", 23, false],
-  "fosanAcademy", ["rian", 21, false], ["rama", 23, true], ["rijal", 22, false],
+  "duskiTeam",
+  ["bhagas", 20, true],
+  ["adhit", 19, false],
+  ["puka", 23, false],
+  "fosanAcademy",
+  ["rian", 21, false],
+  ["rama", 23, true],
+  ["rijal", 22, false],
+];
+
+let Input = [
+  ["MIBLabs", ["bhagas", 20, true], ["adhit", 19, false], ["puka", 23, false]],
+  ["duskiTeam", ["rian", 21, false], ["rama", 23, true], ["rijal", 22, false]],
 ];
 
 console.log(dataKaryawan(data));
