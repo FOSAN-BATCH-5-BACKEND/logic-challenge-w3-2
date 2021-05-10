@@ -3,9 +3,11 @@
 */
 
 function duaKaliUsia(ayah, anak) {
-    // your code here
+    let hasil = (anak*2)-ayah;{
+      return hasil;
+    }
 
-  }
+}
 
 
 console.log(duaKaliUsia(55,30)) //5

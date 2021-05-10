@@ -2,9 +2,20 @@
 */
 
 let jumlah = function(halte){
-    // Good Luck!
-  }
-
+    let m = 0;
+    let o = 0;
+    for (let i = 0; i < halte.length; i++){
+      // console.log(halte[i]);
+     if (halte[i][0]){
+       m += halte[i][0]
+     }
+     if (halte[i][1]){
+       o += halte[i][1]
+     }
+      
+    } hasil = m-o
+    return hasil;
+} 
 
 
 console.log(jumlah([[10,0],[3,5],[5,8]])) //5

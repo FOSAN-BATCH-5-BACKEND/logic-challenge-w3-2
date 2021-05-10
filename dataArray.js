@@ -37,7 +37,25 @@ Output: "Divisi: duskiTeam
 */
 
 function dataKaryawan(parameterData) {
-    // buatlah kodemu disini
+  for (let i = 0; i < data.length; i++) {
+    if(Array.isArray(data[i])){
+      for (let j = 0; j < data[i].length; j++){
+        if(Array.isArray(data[i][j])){
+          for (let k = 0; k < data[i][j].length; k++) {
+            // console.log(data[i][j][k]);
+    }
+          }else {
+            
+            console.log(`Divisi : ${data[i][j]}`);
+          }
+        }
+      }else{ 
+        console.log(`Perusahaan : ${data [i]}`);
+     
+  }
+  
+  }
+  
 }
 
 let data = [
